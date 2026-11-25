@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<!-- =========================================================
+     inscripcion.html - Formulario de inscripcion.
+     Sitio modelo "Taller de artesania" (Taller ficticio)
+     VERSIÓN SIN AMPLIACIONES: se ciñe a lo mínimo que pide el enunciado.
+     UD02 - Lenguajes de marcas. Ejercicio para entregar.
+     Elaborado con mediación del ejercicio de ejemplo
+     ========================================================= -->
+<html lang="es">
+<head>
+	<!-- Codificación de caracteres: permite tildes y eñes -->
+	<meta charset="UTF-8">
+	<!-- Descripción que muestran los buscadores -->
+	<meta name="description" content="Taller de artesanía: Clases semanales, exposiciones e inscripción.">
+	<meta name="author" content="David Parada Amoedo">
+	<title>Inicio | Taller de Instrumentos Artesanos DP Galicia (sin ampliaciones)</title>
+
+    <!-- Carga la fuente utilizada para títulos -->
+    <link rel="preconnect"
+         href="https://fonts.googleapis.com">
+
+    <!-- Optimiza la carga de fuentes -->
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+    <!-- Fuente decorativa para títulos -->
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Fuente principal para texto -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Iconos de Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap"
+          rel="stylesheet">
+
+	<!-- Hoja de estilos EXTERNA, común a todas las páginas -->
+	<link rel="stylesheet" href="css/estilos.css">
+
+</head>
+<body>
+    <header class="portada">
+
+    <!-- Imagen de portada -->
+        <img
+            src="img/foto_taller.jpg"
+            alt="Taller ficticio"
+            class="imagen-portada">
+
+    </header>
+
+    <!-- TÍTULO PRINCIPAL -->
+
+    <section class="titulo">
+
+        <!-- Contenedor centrado -->
+        <div class="contenedor">
+
+        <!-- Subtítulo -->
+            <div class="subtitulo">
+                Artesanía e tradición galegas
+            </div>
+
+            <!-- Título principal de la página -->
+            <h1>
+                Taller de Instrumentos Artesanos DP Galicia
+            </h1>
+
+            <!-- Línea decorativa -->
+            <div class="divisor"></div>
+
+        </div>
+
+    </section>
+
+	<!-- ===== NAVEGACIÓN PRINCIPAL (igual en todas las páginas) ===== -->
+
+	<nav aria-label="Menú principal">
+		<ul>
+			<!-- La clase "actual" marca la página en la que estamos -->
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="exposicion.html">Exposicions</a></li>
+			<li><a href="inscripcion.html" class="actual" aria-current="page">Inscripción</a></li>
+		</ul>
+	</nav>
+
+<main>
+    <section>
+      <h2>Únete a nosa comunidade</h2>
+      <p>Rechea o formulario e avisaremoste dos nosos obradoiros.</p>
+      <p class="nota">Os campos con borde Vermello a esquerda son obrigatorios.</p>
+
+      <!-- action: página a la que se envían los datos.
+           method="get": los datos viajan en la URL (no hay servidor en este ejemplo).
+           En un sitio real se usaría method="post" y un programa en el servidor. -->
+      <form action="gracias.html" method="get">
+
+        <!-- fieldset agrupa campos relacionados; legend es su título -->
+        <fieldset>
+          <legend>Datos personais</legend>
+
+          <div class="campo">
+            <!-- for="nombre" enlaza la etiqueta con el input id="nombre":
+                 al hacer clic en el texto, el cursor va al campo. -->
+            <label for="nombre">Nome e apelidos</label>
+            <!-- name: nombre con el que se envía el dato.
+                 required: validación del navegador (campo obligatorio). -->
+            <input type="text" id="nombre" name="nombre" placeholder="Ej.: Ana López Pérez" required>
+          </div>
+
+          <div class="campo">
+            <label for="correo">Correo electrónico</label>
+            <!-- type="email": el navegador comprueba que tenga formato de correo -->
+            <input type="email" id="correo" name="correo" placeholder="ana@ejemplo.com" required>
+          </div>
+
+          <div class="campo">
+            <label for="nacimiento">Fecha de nacemento</label>
+            <input type="date" id="nacimiento" name="nacimiento">
+          </div>
+<!-- -------------------------------------------------------------------------------------------------------->
+<!--          <div class="campo">
+            <label for="libros">¿Cuántos libros lees al año, aproximadamente?</label>
+            <!-- min y max limitan el número permitido **>
+            <input type="number" id="libros" name="libros" min="0" max="365" value="5">
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferencias</legend>
+-->
+          <!-- Botones de opción (radio): mismo "name" = solo se puede elegir uno -->
+          <p><strong>Día preferido</strong></p>
+          <div class="campo opciones">
+            <input type="radio" id="luns" name="dia" value="luns" checked>
+            <label for="luns">Luns</label>
+            <input type="radio" id="martes" name="dia" value="martes">
+            <label for="martes">Martes</label>
+            <input type="radio" id="mercores" name="dia" value="mercores" checked>
+            <label for="mercores">Mércores</label>
+            <input type="radio" id="xoves" name="dia" value="xoves">
+            <label for="xoves">Xoves</label>
+            <input type="radio" id="venres" name="dia" value="venres" checked>
+            <label for="venres">Venres</label>
+            <input type="radio" id="sabado" name="dia" value="sabado">
+            <label for="sabado">Sabado</label>
+          </div>
+
+          <!-- Casillas (checkbox): se pueden marcar varias 
+          <p><strong>Géneros que te gustan</strong></p>
+          <div class="campo opciones">
+            <input type="checkbox" id="novela" name="generos" value="novela">
+            <label for="novela">Novela</label>
+            <input type="checkbox" id="poesia" name="generos" value="poesia">
+            <label for="poesia">Poesía</label>
+            <input type="checkbox" id="ensayo" name="generos" value="ensayo">
+            <label for="ensayo">Ensayo</label>
+          </div>
+-->
+
+          <div class="campo">
+            <label for="conocido">¿Cómo nos has conocido?</label>
+            <!-- Menú desplegable: select + option -->
+            <select id="conocido" name="conocido">
+              <option value="">-- Elige una opción --</option>
+              <option value="biblioteca">En la biblioteca</option>
+              <option value="amistad">Por una amistad</option>
+              <option value="internet">Por internet</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label for="comentario">Cuéntanos qué libro recomendarías</label>
+            <!-- textarea: texto de varias líneas -->
+            <textarea id="comentario" name="comentario" rows="4"></textarea>
+          </div>
+        </fieldset>
+
+        <div class="campo opciones">
+          <input type="checkbox" id="acepto" name="acepto" value="si" required>
+          <label for="acepto">Acepto que el club guarde mis datos para avisarme de las reuniones.</label>
+        </div>
+
+        <!-- type="submit" envía el formulario; type="reset" lo vacía -->
+        <button type="submit">Enviar inscripción</button>
+        <button type="reset" class="secundario">Borrar</button>
+      </form>
+    </section>
+  </main>
+
+    <footer>
+        <div class="contenedor">
+            <div class="pie_de_pagina_contenedor">
+                <span>
+                    <h4 class="pie_de_pagina">
+                        Localización
+                    </h4>
+                    <p>
+                        Galicia, España
+                    </p>
+                </span>
+
+                <span>
+                    <h4 class="pie_de_pagina">
+                        Contacto
+                    </h4>
+                    <p>
+                        info@info.gal
+                    </p>
+                </span>
+
+                <span>
+                    <h4 class="pie_de_pagina">
+                        Horario
+                    </h4>
+                    <p>
+                        Martes a Venres
+                    </p>
+                </span>
+            </div>
+
+            <div class="pie_de_pagina_inferior">
+                <p>
+                    © 2026 Taller de Instrumentos
+                    Artesanos DP Galicia
+                </p>
+                <span>
+                    Artesanía de Galicia
+                </span>
+            </div>
+        </div>
+    </footer>
+	
+</body>
+</html>
+

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<!-- =========================================================
+     index.html - Página de inicio
+     Sitio modelo "Taller de artesania" (Taller ficticio)
+     VERSIÓN SIN AMPLIACIONES: se ciñe a lo mínimo que pide el enunciado.
+     UD02 - Lenguajes de marcas. Ejercicio para entregar.
+     Elaborado con mediación del ejercicio de ejemplo
+     ========================================================= -->
+<html lang="es">
+<head>
+	<!-- Codificación de caracteres: permite tildes y eñes -->
+	<meta charset="UTF-8">
+	<!-- Descripción que muestran los buscadores -->
+	<meta name="description" content="Taller de artesanía: Clases semanales, exposiciones e inscripción.">
+	<meta name="author" content="David Parada Amoedo">
+	<title>Inicio | Taller de Instrumentos Artesanos DP Galicia (sin ampliaciones)</title>
+    <!-- Carga la fuente utilizada para títulos -->
+    <link rel="preconnect"
+         href="https://fonts.googleapis.com">
+    <!-- Optimiza la carga de fuentes -->
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+    <!-- Fuente decorativa para títulos -->
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+	<!-- Hoja de estilos EXTERNA, común a todas las páginas -->
+	<link rel="stylesheet" href="css/estilos.css">
+
+	<!-- Estilos a nivel de PÁGINA: solo afectan a index.html.
+		Se escriben después del <link> para que, si coinciden,
+		prevalezcan sobre la hoja externa (cascada). -->
+</head>
+<body>
+    <header class="portada">
+
+    <!-- Imagen de portada -->
+        <img
+            src="img/foto_taller.jpg"
+            alt="Taller ficticio"
+            class="imagen-portada">
+
+    </header>
+
+    <!-- TÍTULO PRINCIPAL -->
+
+    <section class="titulo">
+
+        <!-- Contenedor centrado -->
+        <div class="contenedor">
+
+        <!-- Subtítulo -->
+            <div class="subtitulo">
+                Artesanía e tradición galegas
+            </div>
+
+            <!-- Título principal de la página -->
+            <h1>
+                Taller de Instrumentos Artesanos DP Galicia
+            </h1>
+
+            <!-- Línea decorativa -->
+            <div class="divisor"></div>
+
+        </div>
+
+    </section>
+
+	<!-- ===== NAVEGACIÓN PRINCIPAL (igual en todas las páginas) ===== -->
+
+	<nav aria-label="Menú principal">
+		<ul>
+			<!-- La clase "actual" marca la página en la que estamos -->
+			<li><a href="index.html" class="actual" aria-current="page">Inicio</a></li>
+			<li><a href="exposicion.html">Exposicion</a></li>
+			<li><a href="inscripcion.html">Inscripción</a></li>
+		</ul>
+	</nav>
+	
+	<main>
+		<div class="presentacion">
+			<h2>A arte de forxar o son en Galicia</h2>
+			<p>Situado no corazón de Galicia, o noso obradoiro preserva as técnicas ancestrais da percusión tradicional galega: desde o curvado artesanal dos aros para pandeiras, bombos e tamboriles, ata o curtido natural das peles e a elaboración manual de ferreñas. Abrimos as nosas portas para transmitir este oficio sonoro mediante unha formación práctica, desenvolvida directamente no banco de traballo.</p>
+        </div>
+
+		<section>
+            <div class="cabecera">
+                <div class="titulo_formacion">
+                    <p>formacion práctica</p>
+                    <h3>Cursos, Horarios y Días</h3>
+                </div>
+                <span class="curso">
+                convocatoria 2027
+                </span>
+            </div>
+            <div class="linea"></div>
+        </section>
+
+        <section>
+            <section class="tarjeta">
+                <span class="horario">
+                Martes e Xoves de 16:00 a 20:00
+                </span>
+                <h4>
+                Construción de instrumentos de percusión tradicional galega: pandeiros, pandeiretas, bombos e tambores pequenos
+                </h4>
+                <p>
+                Técnicas para curvar duelas e aros de madeira, montar armazóns, cravar e realizar a afinación acústica de instrumentos de percusión manual e instrumentos de percusión tradicionais de gran formato.
+                <p/>
+            </section>
+
+            <section class="tarjeta">
+                <span class="horario">
+                Mercores de 16:00 a 20:00
+                </span>
+                <h4>
+                Procesamento, curtido e estirado de peles naturais
+                </h4>
+                <p>
+                Selección botánica de taninos, descortezado, depilado manual, remollo e técnicas tradicionais de secado e atado de peles de cabra e ovella para crear parches de tambor de membrana viva.
+                <p/>
+            </section>
+
+            <section class="tarjeta">
+                <span class="horario">
+                Venres de 16:00 a 20:00
+                </span>
+                <h4>
+                Elaboración, axuste e montaxe de ferreñas e cascabeis
+                </h4>
+                <p>
+                Corte, batido, temperado e abovedado de chapas de latón, alpaca e aceiro; montaxe en bastidores de madeira e afinación do timbre de pandeiros e pandeiretas.
+                <p/>
+            </section>
+        </section>
+        
+        <section class="tarjeta_exposiciones">
+            <img 
+                src="img/exposiciones.svg" 
+                alt="Logotipo de un edificio" 
+                width="64" 
+                height="64">
+            <div>
+                <h4>Sala de Mostras e Exposicións</h4>
+                <p>Unha colección permanente de instrumentos históricos galegos de percusión e membrana, que se pode visitar no obradoiro con cita previa.
+                </p>
+            </div>
+            <span class="info">
+            Entrada libre para alumnos
+            </span>
+        </section>
+
+        <section class="tarjeta_info">
+            <section class="tarjeta_2">
+                <section>
+                    <img
+                        src="img/grupo.svg" 
+                        alt="Logotipo de grupo" 
+                        width="48" 
+                        height="48">
+
+                    <span>Grupos reducidos: </span>
+                    <span class="negrita">máximo 6 alumnos</span>
+                </section>
+
+                <section>
+                    <img
+                        src="img/herramientas.svg" 
+                        alt="Logotipo de herramientas" 
+                        width="32" 
+                        height="32">
+                    <span>Recursos: </span>
+                    <span class="negrita">Ferramentas e Materiais incluidos</span>
+                </section>
+
+            </section>
+            <section class="tarjeta_3">
+                <img
+                    src="img/diploma.svg" 
+                    alt="Logotipo de diploma" 
+                    width="40" 
+                    height="40">
+                <span class="negrita">Diploma de oficio artesano o rematar</span>
+            </section>
+
+            <div class="linea_2"></div>
+
+            <section>
+                <p>As prazas asígnanse por estrita orde de solicitude para garantir unha atención individualizada en cada posto de traballo.</p>
+            </section>
+
+            <section
+                class="cta-box"
+                id="inscripcion">
+                <a
+                    class="boton"
+                    href="inscripcion.html">
+                    Solicitar inscripción
+                </a>
+            </section>
+        </section>
+	</main>
+
+
+    <!-- PIE DE PÁGINA -->
+
+    <footer>
+        <div class="contenedor">
+            <div class="pie_de_pagina_contenedor">
+                <span>
+                    <h4 class="pie_de_pagina">
+                        Localización
+                    </h4>
+                    <p>
+                        Galicia, España
+                    </p>
+                </span>
+
+                <span>
+                    <h4 class="pie_de_pagina">
+                        Contacto
+                    </h4>
+                    <p>
+                        info@info.gal
+                    </p>
+                </span>
+
+                <span>
+                    <h4 class="pie_de_pagina">
+                        Horario
+                    </h4>
+                    <p>
+                        Martes a Venres
+                    </p>
+                </span>
+            </div>
+
+            <div class="pie_de_pagina_inferior">
+                <p>
+                    © 2026 Taller de Instrumentos
+                    Artesanos DP Galicia
+                </p>
+                <span>
+                    Artesanía de Galicia
+                </span>
+            </div>
+        </div>
+    </footer>
+	
+</body>
+</html>

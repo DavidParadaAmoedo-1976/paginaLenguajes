@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<!-- =========================================================
+     exposicion.html - Página de exposiciones.
+     Sitio modelo "Taller de artesania" (Taller ficticio)
+     VERSIÓN SIN AMPLIACIONES: se ciñe a lo mínimo que pide el enunciado.
+     UD02 - Lenguajes de marcas. Ejercicio para entregar.
+     Elaborado con mediación del ejercicio de ejemplo
+     ========================================================= -->
+<html lang="es">
+<head>
+	<!-- Codificación de caracteres: permite tildes y eñes -->
+	<meta charset="UTF-8">
+	<!-- Descripción que muestran los buscadores -->
+	<meta name="description" content="Taller de artesanía: Clases semanales, exposiciones e inscripción.">
+	<meta name="author" content="David Parada Amoedo">
+	<title>Inicio | Taller de Instrumentos Artesanos DP Galicia (sin ampliaciones)</title>
+
+    <!-- Carga la fuente utilizada para títulos -->
+    <link rel="preconnect"
+         href="https://fonts.googleapis.com">
+
+    <!-- Optimiza la carga de fuentes -->
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+    <!-- Fuente decorativa para títulos -->
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Fuente principal para texto -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Iconos de Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap"
+          rel="stylesheet">
+
+	<!-- Hoja de estilos EXTERNA, común a todas las páginas -->
+	<link rel="stylesheet" href="css/estilos.css">
+
+</head>
+<body>
+    <header class="portada">
+
+    <!-- Imagen de portada -->
+        <img
+            src="img/foto_taller.jpg"
+            alt="Taller ficticio"
+            class="imagen-portada">
+
+    </header>
+
+    <!-- TÍTULO PRINCIPAL -->
+
+    <section class="titulo">
+
+        <!-- Contenedor centrado -->
+        <div class="contenedor">
+
+        <!-- Subtítulo -->
+            <div class="subtitulo">
+                Artesanía e tradición galegas
+            </div>
+
+            <!-- Título principal de la página -->
+            <h1>
+                Taller de Instrumentos Artesanos DP Galicia
+            </h1>
+
+            <!-- Línea decorativa -->
+            <div class="divisor"></div>
+
+        </div>
+
+    </section>
+
+	<!-- ===== NAVEGACIÓN PRINCIPAL (igual en todas las páginas) ===== -->
+
+	<nav aria-label="Menú principal">
+		<ul>
+			<!-- La clase "actual" marca la página en la que estamos -->
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="exposicion.html" class="actual" aria-current="page">Exposicions</a></li>
+			<li><a href="inscripcion.html">Inscripción</a></li>
+		</ul>
+	</nav>
+    
+    <main>
+        <section class="tarjeta_4">
+            <span class="coleccion">
+            Colección Permanente
+            </span>
+            <h4>
+            Sala de exposicións única de percusión tradicional
+            </h4>
+            <p>
+            Unha colección viva de instrumentos etnográficos que conta con parches, madeiras nobres e elementos metálicos sonoros fabricados cunha aliaxe exclusiva. Seis pezas maxistrais, representativas das rexións históricas de Galicia, están afinadas e listas para seren escoitadas no espazo de interpretación.
+            <p/>
+        </section>
+
+    <section class="instrumentos">
+
+        <article class="instrumento">
+            <div class="imagen">
+                <img src="img/pandeira.jpg" alt="Pandeira de Folgar">
+                <span class="etiqueta">Montaña de Lugo</span>
+            </div>
+
+            <h3>Pandeira de Folgar</h3>
+
+            <p>
+                Aro de 32 cm para unha resonancia profunda en bailes soltos e foliadas da montaña.
+            </p>
+
+            <div class="ficha">
+                <p><strong>Madeira:</strong> Castiñeiro curado</p>
+                <p><strong>Parche:</strong> Cabra desgrasada</p>
+                <p><strong>Ferreñas:</strong> 14 pares · Cobre batido</p>
+            </div>
+        </article>
+
+        <article class="instrumento">
+            <div class="imagen">
+                <img src="img/pandeireta.jpg" alt="Pandereta de Ría">
+                <span class="etiqueta">Costa da Morte</span>
+            </div>
+
+            <h3>Pandeireta da Ría</h3>
+
+            <p>
+                Recorte ergonómico para unha suxeición lixeira e sostida durante o canto polifónico.
+            </p>
+
+            <div class="ficha">
+                <p><strong>Madeira:</strong> Cerdeira silvestre</p>
+                <p><strong>Parche:</strong> Cabrito o sol</p>
+                <p><strong>Ferreñas:</strong> 10 pares · Latón templado</p>
+            </div>
+        </article>
+
+        <article class="instrumento">
+            <div class="imagen">
+                <img src="img/tamboril.jpg" alt="Tamboril Tradicional">
+                <span class="etiqueta">Ribeira Sacra</span>
+            </div>
+
+            <h3>Tamboril Tradicional</h3>
+
+            <p>
+                Un golpe limpo e unha afinación precisa para acompañar o canto
+                das gaitas.
+            </p>
+
+            <div class="ficha">
+                <p><strong>Madeira:</strong> Nogueira curada</p>
+                <p><strong>Parche:</strong> Pergamino de ovella</p>
+                <p><strong>Bordons:</strong> Tripa entorchada</p>
+            </div>
+        </article>
+
+        <article class="instrumento">
+            <div class="imagen">
+                <img src="img/bombo.jpg" alt="Bombo Procesional">
+                <span class="etiqueta">Tui e Baixo Miño</span>
+            </div>
+
+            <h3>Bombo Procesional</h3>
+
+            <p>
+                Corpo resoador de 50 cm para un grave seco e rotundo.
+            </p>
+
+            <div class="ficha">
+                <p><strong>Madera:</strong> Abedul y Fresno</p>
+                <p><strong>Parche:</strong> Cabra grosa</p>
+                <p><strong>Batedor:</strong> Corcho e Fieltro</p>
+            </div>
+        </article>
+
+        <article class="instrumento">
+            <div class="imagen">
+                <img src="img/pandeiro.jpg" alt="Pandeiro Cadrado">
+                <span class="etiqueta">Soutomaior</span>
+            </div>
+
+            <h3>Pandeiro Cadrado</h3>
+
+            <p>
+                Marco cuadrangular tradicional con cosido cruzado de liño.
+            </p>
+
+            <div class="ficha">
+                <p><strong>Madeira:</strong> Piñeiro do país</p>
+                <p><strong>Parche:</strong> Doble pel cosida</p>
+                <p><strong>Interior:</strong> Cascabeis de bronce</p>
+            </div>
+        </article>
+
+        <article class="instrumento">
+            <div class="imagen">
+                <img src="img/castanholas.jpg" alt="Tarrañolas e Cunchas">
+                <span class="etiqueta">Santiago e Rías</span>
+            </div>
+
+            <h3>Castañolas e Cunchas</h3>
+
+            <p>
+                Pezas de percusión menor para acompañamento de muiñeiras.
+            </p>
+
+            <div class="ficha">
+                <p><strong>Material:</strong> Buxo e Cunchas</p>
+                <p><strong>Acabado:</strong> Aceite de liñaza e cera</p>
+                <p><strong>Uso:</strong> Repique tradicional</p>
+            </div>
+        </article>
+
+    </section>
+
+    <section class="tarjeta_5">
+        <section class= tarjeta_5a>
+            <h3>Visitas e Demostracions</h3>
+            <h4>Planifica as tuas visitas a sala</h4>
+            <p>Visitas guiadas en grupos reducidos de ata 10 persoas, que inclúen unha demostración da afinación dos instrumentos e unha proba acústica dos mesmos. De martes a sábado, ás 10:00 h e ás 12:00 h.
+            </p>
+            <div class="caracteristicas">
+                <span>
+                    Entrada Libre
+                </span>
+                <span>
+                    Apto Familias
+                </span>
+                <span>
+                    Audición en Directo
+                </span>
+            </div>
+        </section>
+        <div class="acciones_visita">
+            <button class="boton_reserva">
+                Reservar Visita Guiada
+            </button>
+        </div>
+    </section>
+    </main>
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="contenedor">
+            <div class="pie_de_pagina_contenedor">
+                <span>
+                    <h4 class="pie_de_pagina">
+                        Localización
+                    </h4>
+                    <p>
+                        Galicia, España
+                    </p>
+                </span>
+
+                <span>
+                    <h4 class="pie_de_pagina">
+                        Contacto
+                    </h4>
+                    <p>
+                        info@info.gal
+                    </p>
+                </span>
+
+                <span>
+                    <h4 class="pie_de_pagina">
+                        Horario
+                    </h4>
+                    <p>
+                        Martes a Venres
+                    </p>
+                </span>
+            </div>
+
+            <div class="pie_de_pagina_inferior">
+                <p>
+                    © 2026 Taller de Instrumentos
+                    Artesanos DP Galicia
+                </p>
+                <span>
+                    Artesanía de Galicia
+                </span>
+            </div>
+        </div>
+    </footer>
+	
+</body>
+</html>
+
